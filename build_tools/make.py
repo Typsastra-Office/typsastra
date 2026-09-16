@@ -31,6 +31,10 @@ def main():
     # web-apps help entry point
     set_env("DESKTOP_URL_WEBAPPS_HELP", BRAND_SITE)
 
+    # core qmake version resources (QMAKE_TARGET_COMPANY/COPYRIGHT)
+    set_env("PUBLISHER_NAME", BRAND_COMPANY)
+    set_env("COPYRIGHT_OWNER", "Based on ONLYOFFICE, (c) Ascensio System SIA. Modified by Typsastra 2026.")
+
     # web-apps / sdkjs build identity (Gruntfile placeholder replacements)
     set_env("APP_COPYRIGHT", BRAND_COPYRIGHT)
     set_env("PUBLISHER_NAME", BRAND_COMPANY)
