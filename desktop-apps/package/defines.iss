@@ -1,32 +1,32 @@
-; -- ONLYOFFICE Desktop Editors Defines --
+; -- Typsastra Office Defines --
 
 #define sCompanyName                    "Typsastra"
-#define sIntCompanyName                 sCompanyName
-#define sProductName                    "Desktop Editors"
+#define sIntCompanyName                 "Typsastra"
+#define sProductName                    "Office"
 #define sIntProductName                 "DesktopEditors"
-#define sAppName                        str(sCompanyName)
+#define sAppName                        "Typsastra Office"
 #define sPackageName                    str(sIntCompanyName + "-" + sIntProductName)
 #define sAppPublisher                   "Typsastra"
 #define sAppPublisherURL                "https://github.com/Typsastra-Office"
-#define sAppSupportURL                  "https://www.onlyoffice.com/support.aspx"
-#define sAppCopyright                   str("© " + sAppPublisher + " " + GetDateTimeString("yyyy",,) + ". All rights reserved.")
-#define sAppIconName                    "ONLYOFFICE"
-#define sOldAppIconName                 "ONLYOFFICE Editors"
-#define sAppProtocol                    'oo-office'
+#define sAppSupportURL                  "https://github.com/Typsastra-Office/DesktopEditors/issues"
+#define sAppCopyright                   "Based on ONLYOFFICE, © Ascensio System SIA. Modified by Typsastra 2026."
+#define sAppIconName                    "Typsastra Office"
+#define sOldAppIconName                 "Typsastra Office"
+#define sAppProtocol                    'typsastra-office'
 
 #define APP_PATH                        str(sIntCompanyName + "\" + sIntProductName)
 #define UPD_PATH                        str(sIntProductName + "Updates")
 #define APP_REG_PATH                    str("Software\" + APP_PATH)
-#define APP_REG_UNINST_KEY              str(sCompanyName + " " + sProductName)
-#define APP_USER_MODEL_ID               "ASC.Documents.5"
+#define APP_REG_UNINST_KEY              "Typsastra Office"
+#define APP_USER_MODEL_ID               "Typsastra.Office.1"
 #define APP_MUTEX_NAME                  "TEAMLAB"
 #define APPWND_CLASS_NAME               "DocEditorsWindowClass"
 
 #define iconsExe                        "DesktopEditors.exe"
 #define NAME_EXE_OUT                    "editors.exe"
 
-#define ASSC_APP_NAME                   "ONLYOFFICE"
-#define ASCC_REG_PREFIX                 "ASC"
-#define ASCC_REG_REGISTERED_APP_NAME    "ONLYOFFICE Editors"
+#define ASSC_APP_NAME                   "Typsastra Office"
+#define ASCC_REG_PREFIX                 "Typsastra"
+#define ASCC_REG_REGISTERED_APP_NAME    "Typsastra Office"
 #define ASSOC_PROG_ID                   "Typsastra.Editors"
-#define ASSOC_APP_FRIENDLY_NAME         "ONLYOFFICE Editors"
+#define ASSOC_APP_FRIENDLY_NAME         "Typsastra Office"
