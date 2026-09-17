@@ -9,6 +9,7 @@
 # branding block because OO_RUNNING_BRANDING is inherited).
 
 import os
+import subprocess
 import sys
 
 BRAND_COMPANY = "Typsastra"
@@ -50,8 +51,12 @@ def main():
     workspace_build_tools = os.path.abspath(
         os.path.dirname(os.path.abspath(__file__)) + "/../../build_tools"
     )
-    os.chdir(workspace_build_tools)
-    os.execv(sys.executable, [sys.executable, "make.py"] + sys.argv[1:])
+    # subprocess instead of os.execv: on Windows execv spawns a new process and
+    # exits the caller, which breaks every wait() up the call chain
+    ret = subprocess.call(
+        [sys.executable, "make.py"] + sys.argv[1:], cwd=workspace_build_tools
+    )
+    sys.exit(ret)
 
 
 if __name__ == "__main__":
