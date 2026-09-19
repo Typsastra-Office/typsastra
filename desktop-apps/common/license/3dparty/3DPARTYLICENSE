@@ -56,3 +56,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+
+MiSans Khmer
+
+Copyright (C) Xiaomi Inc. All rights reserved.
+
+This software uses the MiSans Khmer fonts (MiSans Global family), embedded for
+rendering Khmer script in the application user interface. MiSans fonts are
+provided by Xiaomi under the MiSans Font Intellectual Property License
+Agreement. The fonts are used unmodified and are not redistributed as a
+standalone font product.
+
+License text: see MiSans-Khmer-LICENSE.txt distributed with the application
+fonts, or https://hyperos.mi.com/font/
