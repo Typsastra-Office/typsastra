@@ -13,6 +13,7 @@
 #define sAppIconName                    "Typsastra Office"
 #define sOldAppIconName                 "Typsastra Office"
 #define sAppProtocol                    'typsastra-office'
+#define sDefaultLocale                  "km-KH"
 
 #define APP_PATH                        str(sIntCompanyName + "\" + sIntProductName)
 #define UPD_PATH                        str(sIntProductName + "Updates")

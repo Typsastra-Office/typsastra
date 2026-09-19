@@ -36,6 +36,9 @@ def main():
     set_env("PUBLISHER_NAME", BRAND_COMPANY)
     set_env("COPYRIGHT_OWNER", "Based on ONLYOFFICE, (c) Ascensio System SIA. Modified by Typsastra 2026.")
 
+    # default interface language for the editors (Gruntfile {{DEFAULT_LANG}})
+    set_env("DEFAULT_LANG", "km")
+
     # web-apps / sdkjs build identity (Gruntfile placeholder replacements)
     set_env("APP_COPYRIGHT", BRAND_COPYRIGHT)
     set_env("PUBLISHER_NAME", BRAND_COMPANY)
