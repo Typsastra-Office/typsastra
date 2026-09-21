@@ -14,6 +14,8 @@ import sys
 
 BRAND_COMPANY = "Typsastra"
 BRAND_PRODUCT = "Typsastra Office"
+BRAND_BASE_VERSION = "9.4.0"
+BRAND_RELEASE = "1"
 BRAND_SITE = "https://github.com/Typsastra-Office"
 BRAND_SUPPORT = "https://github.com/Typsastra-Office/DesktopEditors/issues"
 BRAND_RELEASES = "https://github.com/Typsastra-Office/DesktopEditors/releases"
@@ -25,6 +27,12 @@ def set_env(name, value):
 
 
 def main():
+    # Release identity: PRODUCT_VERSION tracks the upstream ONLYOFFICE base we
+    # are based on, BUILD_NUMBER is the Typsastra release number and becomes the
+    # fourth version component (installer, executable resources, about).
+    set_env("PRODUCT_VERSION", BRAND_BASE_VERSION)
+    set_env("BUILD_NUMBER", BRAND_RELEASE)
+
     # Windows updmodule update channels
     set_env("DESKTOP_URL_UPDATES_MAIN_CHANNEL", BRAND_RELEASES + "/latest/download/appcast.json")
     set_env("DESKTOP_URL_UPDATES_DEV_CHANNEL", BRAND_RELEASES + "/download/appcastdev/appcastdev.json")
