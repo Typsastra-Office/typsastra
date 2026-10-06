@@ -18,3 +18,12 @@ SUPPORT_URL = https://github.com/Typsastra-Office/DesktopEditors/issues
 SUPPORT_MAIL = 
 
 SCHEME_HANDLER = typsastra-office
+
+# desktop-apps/package/Makefile computes these with := at lines 62, 63 and 89,
+# before this file is included, so they keep the ONLYOFFICE defaults and the
+# Linux packages would look for build_tools/out/linux_64/onlyoffice and install
+# under /opt/onlyoffice. Restate them recursively so they resolve after the
+# branding above.
+DESKTOPEDITORS_PREFIX = $(COMPANY_NAME_LOW)/$(PRODUCT_NAME_LOW)
+DESKTOPEDITORS_EXEC = $(PACKAGE_NAME)
+SOURCE_DIR = ../../build_tools/out/$(PLATFORM)/$(COMPANY_NAME_LOW)
