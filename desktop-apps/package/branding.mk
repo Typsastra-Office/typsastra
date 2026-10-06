@@ -27,3 +27,4 @@ SCHEME_HANDLER = typsastra-office
 DESKTOPEDITORS_PREFIX = $(COMPANY_NAME_LOW)/$(PRODUCT_NAME_LOW)
 DESKTOPEDITORS_EXEC = $(PACKAGE_NAME)
 SOURCE_DIR = ../../build_tools/out/$(PLATFORM)/$(COMPANY_NAME_LOW)
+HELP_GLOB = opt/$(DESKTOPEDITORS_PREFIX)/editors/web-apps/apps/*/main/resources/help
