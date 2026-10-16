@@ -14,7 +14,7 @@ import sys
 
 BRAND_COMPANY = "Typsastra"
 BRAND_PRODUCT = "Typsastra Office"
-BRAND_BASE_VERSION = "9.4.0"
+BRAND_BASE_VERSION = "10.0.0"
 BRAND_RELEASE = "1"
 BRAND_SITE = "https://github.com/Typsastra-Office"
 BRAND_SUPPORT = "https://github.com/Typsastra-Office/DesktopEditors/issues"
